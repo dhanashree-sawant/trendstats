@@ -2,7 +2,7 @@ import mysql, { ConnectionOptions } from 'mysql2';
 
 const connection = mysql.createConnection({
     host:'localhost',
-    password: '',
+    password: 'Tradestats@mysql1',
     user: 'root',
     database: 'tradestats',
     rowsAsArray: true,
