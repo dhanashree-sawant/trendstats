@@ -1,3 +1,4 @@
+
 import mysql, { ConnectionOptions } from 'mysql2';
 
 const connection = mysql.createConnection({
