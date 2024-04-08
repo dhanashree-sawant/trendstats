@@ -7,8 +7,11 @@ export default async function handler(req,res) {
     let last_name = arr[1];
     let email = arr[2];
     let password = arr[3];
+    const bcrypt = require('bcrypt');
+
+    const hashedPassword = await bcrypt.hash(password, 10);
     //console.log('INSERT INTO user_signup (first_name,last_name,email,password) VALUES ("'+first_name+'","'+last_name+'","'+email+'","'+password+'")');
-    await connection.promise().query('INSERT INTO user_signup (first_name,last_name,email,password) VALUES ("'+first_name+'","'+last_name+'","'+email+'","'+password+'")');
+    await connection.promise().query('INSERT INTO user_signup (first_name,last_name,email,password) VALUES ("'+first_name+'","'+last_name+'","'+email+'","'+hashedPassword+'")');
     res.status(200).json('')
     
 }
