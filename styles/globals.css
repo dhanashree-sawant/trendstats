@@ -270,3 +270,17 @@ input[type="search"]::-webkit-search-cancel-button {
 [x-cloak] {
   display: none !important;
 }
+
+.search-data-custom-div{
+  gap: 0;
+}
+.search-label-custom{
+  margin-bottom: 1.375rem;
+}
+.search-data-custom{
+  border-color: rgba(0, 0, 0, 0.3);
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  cursor: pointer;
+}
