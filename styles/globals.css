@@ -273,12 +273,15 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .search-data-custom-div{
   gap: 0;
+  position: absolute;
+  width: 9.5%;
+  background-color: white;
 }
 .search-label-custom{
   margin-bottom: 1.375rem;
 }
 .search-data-custom{
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
   border-bottom-width: 1px;
   border-left-width: 1px;
   border-right-width: 1px;
